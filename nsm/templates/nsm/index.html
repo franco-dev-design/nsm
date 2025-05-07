@@ -1,42 +1,82 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
   <meta charset="utf-8">
   <title>North Star Massage</title>
   <meta name="description" content="">
-  <meta name="author" content="">
-
-  <!-- Mobile Specific Metas
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="author" content="Franco Aguilar-Hernandez">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- FONT
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <!-- FONT -->
   <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
 
-  <!-- CSS
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/skeleton.css">
+  <!-- CSS -->
+  
+  <link rel="stylesheet" href="{% static 'css/styles.css' %}">
 
-  <!-- Favicon
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="icon" type="image/png" href="images/favicon.png">
-
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="{% static 'images/favicon.png' %}">
 </head>
-<body>
 
-  <!-- Primary Page Layout
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <div class="container">
-    <div class="header">
-        <h1>NorthStar Massage</h1>
-        <p>Thank you for your patience. We are working on bringing you some cool content.</p>
-    </div>
+<body>
+  <div class="banner">
+    <h1>North Star Massage</h1>
+    <p>Your guiding light to <em>relaxation!</em></p>
   </div>
 
-<!-- End Document
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <header>
+    <nav>
+      <ul>
+        <li>Home</li>
+        <li>Services</li>
+        <li>About</li>
+        <li>Contact</li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="container">
+      <div class="row">
+        <div class="column-66">
+          <h2>Services</h2>
+        </div>
+        <div class="column-33">
+          <p>[image here]</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="container">
+      <div class="row">
+        <div class="column-33">
+          [image here]
+        </div>
+        <div class="column-66">
+          <h2>Location</h2>
+        </div>
+      </div>
+    </div> 
+
+    <div class="container">
+      <div class="row">
+        <div class="column-66">
+          <h2>About Us</h2>
+        </div>
+        <div class="column-33">
+          <p>[image here]</p>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <footer>
+    <p>&copy NorthStar Massage LLC. All rights reserved.</p>
+  </footer>
+
+
 </body>
 </html>
